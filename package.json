@@ -1,0 +1,25 @@
+{
+  "name": "devil-pc",
+  "version": "1.0.0",
+  "description": "devil全�前端代码",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azhong123/Devil-pc.git"
+  },
+  "author": "Rosen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azhong123/Devil-pc/issues"
+  },
+  "homepage": "https://github.com/azhong123/Devil-pc#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.8",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "style-loader": "^0.19.1",
+    "webpack": "^1.15.0"
+  }
+}
