@@ -2,7 +2,7 @@
 * @Author: Admin
 * @Date:   2018-01-14 22:17:17
 * @Last Modified by:   Admin
-* @Last Modified time: 2018-01-15 21:52:48
+* @Last Modified time: 2018-01-21 11:31:27
 */
 'use strict'
 var Hogan = require('hogan.js'); 
@@ -13,10 +13,10 @@ var _mm = {
     request : function(param){
         var _this = this;
         $.ajax({
-            type        : param.method || 'get',
-            url         : param.url    || '',
-            dataType    : param.data   || 'json',
-            data       : param.data    || '',
+            type        : param.method     || 'get',
+            url         : param.url        || '',
+            dataType    : param.dataType   || 'json',
+            data       : param.data        || '',
             success  : function(res){
                 //请求成功
                 if(0 == res.status){
@@ -31,7 +31,7 @@ var _mm = {
                 }
             },
             error    : function(err){
-                typeof param == 'function' && param.error(err.statusText);
+                typeof param === 'function' && param.error(err.statusText);
             }
         });
     },
@@ -77,7 +77,7 @@ var _mm = {
     },
     //统一登录处理
     doLogin : function(){
-        window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
     },
     //返回主页
     goHome : function(){

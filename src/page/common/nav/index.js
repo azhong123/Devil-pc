@@ -2,7 +2,7 @@
 * @Author: Admin
 * @Date:   2018-01-16 20:31:40
 * @Last Modified by:   Admin
-* @Last Modified time: 2018-01-16 21:32:25
+* @Last Modified time: 2018-01-18 20:55:07
 */
 require('./index.css');
 var _mm    = require('util/mm.js');
@@ -23,7 +23,7 @@ var nav    = {
         });
         // 注册点击事件
         $('.js-register').click(function(){
-            window.location.href = './register.html';
+            window.location.href = './user-register.html';
         });
         // 退出 点击事件
         $('.js-logout').click(function(){

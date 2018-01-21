@@ -2,7 +2,7 @@
 * @Author: Admin
 * @Date:   2018-01-16 20:31:40
 * @Last Modified by:   Admin
-* @Last Modified time: 2018-01-16 23:39:38
+* @Last Modified time: 2018-01-21 13:34:27
 */
 
 require('./index.css');
@@ -16,7 +16,7 @@ var navSide    = {
         navList : [
             {name : 'user-center', desc : '个人中心', href : './user-center.html'},
             {name : 'order-list', desc : '我的订单', href : './order-list.html'},
-            {name : 'pass-update', desc : '修改密码', href : './pass-update.html'},
+            {name : 'user-pass-update', desc : '修改密码', href : './user-pass-update.html'},
             {name : 'about', desc : '关于Devil', href : './about.html'}
         ]
     },
