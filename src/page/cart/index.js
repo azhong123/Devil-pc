@@ -2,11 +2,10 @@
 * @Author: Admin
 * @Date:   2018-01-22 19:20:58
 * @Last Modified by:   Admin
-* @Last Modified time: 2018-01-23 21:22:42
+* @Last Modified time: 2018-01-23 21:45:31
 */
 
 require('./index.css');
-
 require('page/common/header/index.js');
 var _mm           = require('util/mm.js');
 var _cart         = require('service/cart-service.js');
@@ -129,7 +128,7 @@ var page = {
             // 判断总价大于 0 ，进行提交
             if(_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice
 >0){
-                window.location.href = './confirm.html';
+                window.location.href = './order-confirm.html';
             }else{
                 _mm.errorTips('请选择商品后在提交');
             }
